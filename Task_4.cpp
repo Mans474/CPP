@@ -9,7 +9,7 @@ public:
 
     void MenuBasedInput()
     {
-        cout << "===== UNIT CONVERTER =====" << endl;
+        cout << "UNIT CONVERTER SUITE" << endl;
         cout << "1. Kilometer To Meter" << endl;
         cout << "2. Meter To Kilometer" << endl;
         cout << "3. Centimetre To Meter" << endl;
