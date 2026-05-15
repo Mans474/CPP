@@ -20,9 +20,7 @@ class Matrix_Operation
                 cin >> A[i][j];
             }
         }
-
         cout << "\nMatrix A:\n";
-
         for(int i = 0; i < 3; i++)
         {
             for(int j = 0; j < 3; j++)
@@ -45,34 +43,27 @@ class Matrix_Operation
                 cin >> B[i][j];
             }
         }
-
         cout << "\nMatrix B:\n";
-
         for(int i = 0; i < 3; i++)
         {
             for(int j = 0; j < 3; j++)
             {
                 cout << B[i][j] << " ";
             }
-
-            cout << endl;
+         cout << endl;
         }
     }
-
-    void Menu()
+     void Menu()
     {
         int choice;
-
         cout << "\nChoose Operation:\n";
         cout << "1. Addition\n";
         cout << "2. Transpose of Matrix A\n";
-
         cin >> choice;
 
         switch(choice)
         {
             case 1:
-
             for(int i = 0; i < 3; i++)
             {
                 for(int j = 0; j < 3; j++)
@@ -80,20 +71,16 @@ class Matrix_Operation
                     result[i][j] = A[i][j] + B[i][j];
                 }
             }
-
-            cout << "\nAddition Result:\n";
-
-            for(int i = 0; i < 3; i++)
+         cout << "\nAddition Result:\n";
+         for(int i = 0; i < 3; i++)
             {
                 for(int j = 0; j < 3; j++)
                 {
                     cout << result[i][j] << " ";
                 }
-
-                cout << endl;
+                 cout << endl;
             }
-
-            break;
+             break;
 
             case 2:
 
@@ -104,20 +91,16 @@ class Matrix_Operation
                     result[i][j] = A[j][i];
                 }
             }
-
-            cout << "\nTranspose of Matrix A:\n";
-
-            for(int i = 0; i < 3; i++)
+ cout << "\nTranspose of Matrix A:\n";
+  for(int i = 0; i < 3; i++)
             {
                 for(int j = 0; j < 3; j++)
                 {
                     cout << result[i][j] << " ";
                 }
-
-                cout << endl;
+cout << endl;
             }
-
-            break;
+ break;
 
             default:
             cout << "Invalid Choice";
